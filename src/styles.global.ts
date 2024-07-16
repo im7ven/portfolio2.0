@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
 --accent-color: #F926AE;
 --background-primary: #0D1224;
 --body-text: #b8c1ec;
---border-radius: 8px;
+--border-radius: 5px;
 --primary-font:  "Gabarito", sans-serif;
 
 }
@@ -45,6 +45,22 @@ export const bodyText = styled.p`
 
   @media screen and (min-width: 768px) {
     font-size: 2.1rem;
+  }
+`;
+
+export const ListItem = styled.li`
+  font-size: 1.8rem;
+  color: var(--body-text);
+  text-transform: uppercase;
+  transition: color 0.15s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 2.3rem;
   }
 `;
 
