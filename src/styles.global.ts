@@ -49,7 +49,7 @@ export const bodyText = styled.p`
 `;
 
 export const ListItem = styled.li`
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: var(--body-text);
   text-transform: uppercase;
   transition: color 0.15s ease-in;
@@ -59,8 +59,12 @@ export const ListItem = styled.li`
     color: #fff;
   }
 
+  &.spacing {
+    margin: 0 3rem;
+  }
+
   @media screen and (min-width: 768px) {
-    font-size: 2.3rem;
+    font-size: 1.9rem;
   }
 `;
 
