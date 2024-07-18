@@ -25,11 +25,7 @@ const Slider = styled(motion.div)`
   left: 0;
   right: 0;
   z-index: 7;
-  background: linear-gradient(
-    165deg,
-    rgba(13, 18, 36, 1) 0%,
-    rgba(37, 44, 68, 1) 100%
-  );
+  background: var(--accent-color);
 `;
 
 const RevealAnimation = ({
@@ -64,8 +60,8 @@ const RevealAnimation = ({
       </motion.div>
       <Slider
         variants={{
-          hidden: { bottom: 0 },
-          visible: { bottom: "100%" },
+          hidden: { left: 0 },
+          visible: { left: "100%" },
         }}
         initial="hidden"
         animate={slideControls}
