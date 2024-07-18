@@ -3,8 +3,10 @@ import { ListItem } from "../styles.global";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { IoIosMail } from "react-icons/io";
-
-const NavbarWrapper = styled.nav`
+import { motion } from "framer-motion";
+import { ReactNode } from "react";
+import ProgressFadeIn from "./ProgressFadeIn";
+const NavbarWrapper = styled(motion.nav)`
   display: none;
   // justify-content: center;
   align-items: center;
@@ -27,7 +29,7 @@ const NavbarWrapper = styled.nav`
 const NavList = styled.ul`
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  // gap: 3rem;
   list-style: none;
 `;
 
@@ -43,18 +45,43 @@ const IconWrapper = styled.div`
   }
 `;
 
+const PlaceHolder = styled.span`
+  opacity: 0.1;
+`;
+
 const Navbar = () => {
+  const socialIcons: ReactNode[] = [
+    <FaLinkedinIn size="28px" color="#fff" />,
+    <TbBrandGithubFilled size="28px" color="#fff" />,
+    <IoIosMail size="28px" color="#fff" />,
+  ];
+
+  const navLinks: ReactNode[] = [
+    <PlaceHolder>|</PlaceHolder>,
+    <ListItem>Projects</ListItem>,
+    <ListItem className="spacing">Skills</ListItem>,
+    <ListItem>Contact</ListItem>,
+  ];
+
   return (
     <NavbarWrapper>
       <NavList>
-        <ListItem>Projects</ListItem>
-        <ListItem>Skills</ListItem>
-        <ListItem>Contact</ListItem>
+        {navLinks.map((link, index) => (
+          <ProgressFadeIn
+            key={index}
+            index={index}
+            initial={index === 0 ? "" : "initial"}
+          >
+            {link}
+          </ProgressFadeIn>
+        ))}
       </NavList>
       <IconWrapper>
-        <FaLinkedinIn size="28px" color="#fff" />
-        <TbBrandGithubFilled size="28px" color="#fff" />
-        <IoIosMail size="28px" color="#fff" />
+        {socialIcons.map((icon, index) => (
+          <ProgressFadeIn key={index} index={index}>
+            {icon}
+          </ProgressFadeIn>
+        ))}
       </IconWrapper>
     </NavbarWrapper>
   );
