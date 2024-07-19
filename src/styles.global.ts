@@ -63,6 +63,10 @@ export const ListItem = styled.li`
     margin: 0 3rem;
   }
 
+  &.mobile {
+    color: #fff;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 1.9rem;
   }
