@@ -11,8 +11,11 @@ interface Props {
 const RevealWrapper = styled(motion.div)<Props>`
   position: relative;
   overflow: ${(props) => props.overflow};
-  width: ${(props) => props.width};
+  width: 100%;
 
+  @media screen and (min-width: 768px) {
+    width: ${(props) => props.width};
+  }
   &.avatar {
     overflow: visible;
   }
