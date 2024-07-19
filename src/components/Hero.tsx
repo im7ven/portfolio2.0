@@ -30,9 +30,14 @@ const AuthorHeading = css`
   transition: 0.3s ease-in-out;
 
   @media screen and (min-width: 768px) {
+    font-size: 7rem;
+    line-height: 6rem;
+    max-width: 45rem;
+  }
+
+  @media screen and (min-width: 1024px) {
     font-size: 9rem;
     line-height: 7.5rem;
-    max-width: 45rem;
   }
 `;
 
@@ -66,7 +71,7 @@ const Avatar = styled.img`
 
   @media screen and (min-width: 768px) {
     grid-column: 2;
-    max-width: 55rem;
+    max-width: 60rem;
   }
 `;
 
