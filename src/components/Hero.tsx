@@ -80,7 +80,13 @@ const Greeting = styled.p`
 const BtnWrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+    gap: 1.5rem;
+  }
 `;
 
 const AboutBtn = styled.button`
@@ -89,13 +95,16 @@ const AboutBtn = styled.button`
   gap: 0.6rem;
   align-items: center;
   margin: 2rem 0 0 0;
-  padding: 0.8rem 2rem;
-  // text-transform: uppercase;
   font-weight: 300;
   font-size: 1.7rem;
   color: #fff;
   border: 1px solid white;
   background: 0;
+  padding: 0.8rem 1.5rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 0.8rem 2rem;
+  }
 `;
 
 const ResumeBtn = styled(AboutBtn)`
@@ -120,7 +129,7 @@ const Hero = () => {
           <BtnWrapper>
             <AboutBtn>
               <BiSolidUserDetail size="26px" />
-              View Bio
+              View About
             </AboutBtn>
             <ResumeBtn>
               <IoMdDownload size="26px" />
