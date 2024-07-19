@@ -6,6 +6,7 @@ import { IoIosMail } from "react-icons/io";
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 import ProgressFadeIn from "./ProgressFadeIn";
+import SocialLinks from "./SocialLinks";
 const NavbarWrapper = styled(motion.nav)`
   display: none;
   // justify-content: center;
@@ -33,29 +34,11 @@ const NavList = styled.ul`
   list-style: none;
 `;
 
-const IconWrapper = styled.div`
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  position: absolute;
-  right: 1rem;
-
-  @media screen and (min-width: 768px) {
-    right: 3.5rem;
-  }
-`;
-
 const PlaceHolder = styled.span`
   opacity: 0.1;
 `;
 
 const Navbar = () => {
-  const socialIcons: ReactNode[] = [
-    <FaLinkedinIn size="28px" color="#fff" />,
-    <TbBrandGithubFilled size="28px" color="#fff" />,
-    <IoIosMail size="28px" color="#fff" />,
-  ];
-
   const navLinks: ReactNode[] = [
     <PlaceHolder>|</PlaceHolder>,
     <ListItem>Projects</ListItem>,
@@ -76,13 +59,7 @@ const Navbar = () => {
           </ProgressFadeIn>
         ))}
       </NavList>
-      <IconWrapper>
-        {socialIcons.map((icon, index) => (
-          <ProgressFadeIn key={index} index={index}>
-            {icon}
-          </ProgressFadeIn>
-        ))}
-      </IconWrapper>
+      <SocialLinks />
     </NavbarWrapper>
   );
 };
