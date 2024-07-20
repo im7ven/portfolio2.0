@@ -3,7 +3,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import ProgressFadeIn from "./ProgressFadeIn";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const IconWrapper = styled.div`
   display: flex;
@@ -28,12 +28,32 @@ const IconWrapper = styled.div`
   }
 `;
 
+const icon = css`
+  color: #fff;
+  transition: color 0.15s ease-in;
+  font-size: 3rem;
+
+  @media screen and (min-width: 768px) {
+    color: var(--body-text);
+  }
+
+  &:hover {
+    color: #fff;
+  }
+`;
+
+const LinkedIn = styled(FaLinkedinIn)`
+  ${icon}
+`;
+const GitHub = styled(TbBrandGithubFilled)`
+  ${icon}
+`;
+const Email = styled(IoIosMail)`
+  ${icon}
+`;
+
 const SocialLinks = () => {
-  const socialIcons: ReactNode[] = [
-    <FaLinkedinIn size="28px" color="#fff" />,
-    <TbBrandGithubFilled size="28px" color="#fff" />,
-    <IoIosMail size="28px" color="#fff" />,
-  ];
+  const socialIcons: ReactNode[] = [<LinkedIn />, <GitHub />, <Email />];
   return (
     <IconWrapper>
       {socialIcons.map((icon, index) => (
