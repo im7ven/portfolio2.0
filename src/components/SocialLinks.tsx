@@ -10,10 +10,21 @@ const IconWrapper = styled.div`
   gap: 1rem;
   align-items: center;
   position: absolute;
-  right: 1rem;
+  z-index: 100;
+  top: 15px;
+  right: 1.5rem;
 
   @media screen and (min-width: 768px) {
     right: 3.5rem;
+  }
+
+  @media screen and (min-width: 1250px) {
+    flex-direction: column;
+    align-items: center;
+    bottom: 50px;
+    top: initial;
+    left: 35px;
+    gap: 2rem;
   }
 `;
 

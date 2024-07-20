@@ -76,8 +76,14 @@ export const ListItem = styled.li`
     color: #fff;
   }
 
+  &.rotate {
+    @media screen and (min-width: 1250px) {
+      transform: rotate(-90deg);
+    }
+  }
+
   &.spacing {
-    margin: 0 3rem;
+    /* margin: 3rem 0; */
   }
 
   &.mobile {
