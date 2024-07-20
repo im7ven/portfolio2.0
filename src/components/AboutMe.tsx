@@ -7,6 +7,7 @@ const AboutWrapper = styled.section`
   grid-column: span 2;
   max-width: 800px;
   margin: 0 auto;
+  padding: 10rem 0;
 `;
 
 const AboutHeading = styled.h2`
