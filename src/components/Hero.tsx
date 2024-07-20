@@ -1,10 +1,19 @@
 import styled, { css } from "styled-components";
 import "../font.css";
 import avatar from "../images/avatar.webp";
-import { grid1x2, sectionBlock } from "../styles.global";
+import {
+  bodyText,
+  grid1x2,
+  secondaryHeading,
+  sectionBlock,
+  subHeading,
+} from "../styles.global";
 import RevealAnimation from "./RevealAnimation";
 import { BiSolidUserDetail } from "react-icons/bi";
 import { IoMdDownload } from "react-icons/io";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import AboutMe from "./AboutMe";
 
 const HeroWrapper = styled.section`
   ${sectionBlock}
@@ -16,9 +25,11 @@ const HeroWrapper = styled.section`
 
 const HeroDetails = styled.div`
   text-align: center;
+  grid-row: 2;
 
   @media screen and (min-width: 768px) {
     text-align: left;
+    grid-row: 1;
   }
 `;
 
@@ -51,7 +62,7 @@ const Title = styled.h2`
   color: var(--secondary-color);
 `;
 
-const AvatarWrapper = styled.div`
+const AvatarWrapper = styled(motion.div)`
   grid-row: 1;
   align-self: end;
 
@@ -118,36 +129,50 @@ const ResumeBtn = styled(AboutBtn)`
 `;
 
 const Hero = () => {
+  const [showAbout, setShowAbout] = useState(false);
+
+  const toggleShowAbout = () => {
+    setShowAbout(!showAbout);
+  };
+
   return (
     <HeroWrapper>
-      <HeroDetails>
-        <RevealAnimation>
-          <Greeting>Hello, my name is</Greeting>
-        </RevealAnimation>
-        <RevealAnimation>
-          <H1>Justin Alexander</H1>
-        </RevealAnimation>
-        <RevealAnimation>
-          <Title>Frontend Developer</Title>
-        </RevealAnimation>
-        <RevealAnimation>
-          <BtnWrapper>
-            <AboutBtn>
-              <BiSolidUserDetail size="26px" />
-              View About
-            </AboutBtn>
-            <ResumeBtn>
-              <IoMdDownload size="26px" />
-              Resume
-            </ResumeBtn>
-          </BtnWrapper>
-        </RevealAnimation>
-      </HeroDetails>
-      <AvatarWrapper>
-        <RevealAnimation overflow="visible">
-          <Avatar src={avatar} alt="Avatar" />
-        </RevealAnimation>
-      </AvatarWrapper>
+      {!showAbout ? (
+        <>
+          <HeroDetails>
+            <RevealAnimation>
+              <Greeting>Hello, my name is</Greeting>
+            </RevealAnimation>
+            <RevealAnimation>
+              <H1>Justin Alexander</H1>
+            </RevealAnimation>
+            <RevealAnimation>
+              <Title>Frontend Developer</Title>
+            </RevealAnimation>
+            <RevealAnimation>
+              <BtnWrapper>
+                <AboutBtn onClick={toggleShowAbout}>
+                  <BiSolidUserDetail size="26px" />
+                  View About
+                </AboutBtn>
+                <ResumeBtn>
+                  <IoMdDownload size="26px" />
+                  Resume
+                </ResumeBtn>
+              </BtnWrapper>
+            </RevealAnimation>
+          </HeroDetails>
+          <AvatarWrapper animate>
+            <RevealAnimation overflow="visible">
+              <Avatar src={avatar} alt="Avatar" />
+            </RevealAnimation>
+          </AvatarWrapper>
+        </>
+      ) : (
+        <div style={{ gridColumn: "span 2" }}>
+          <AboutMe onHideAbout={toggleShowAbout} />
+        </div>
+      )}
     </HeroWrapper>
   );
 };
