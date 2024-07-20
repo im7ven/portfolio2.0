@@ -38,7 +38,24 @@ export const h1 = css`
   }
 `;
 
-export const bodyText = styled.p`
+export const secondaryHeading = css`
+  font-weight: 700;
+  font-size: 3rem;
+`;
+
+export const subHeading = css`
+  color: var(--accent-color);
+  line-height: 2.4rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+
+  @media screen and (min-width) {
+    font-size: 2.1rem;
+  }
+`;
+
+export const bodyText = css`
   font-size: 1.8rem;
   color: var(--body-text);
   line-height: 30px;
