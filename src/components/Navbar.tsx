@@ -31,6 +31,7 @@ const NavbarWrapper = styled(motion.nav)`
     min-height: 100vh;
     left: 0;
     align-items: start;
+    background-color: #0b0f1e;
   }
 `;
 
