@@ -115,6 +115,12 @@ const AboutBtn = styled.button`
   border: 1px solid white;
   background: 0;
   padding: 0.8rem 1.5rem;
+  transition: all 0.15s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(0.97);
+  }
 
   @media screen and (min-width: 768px) {
     padding: 0.8rem 2rem;
