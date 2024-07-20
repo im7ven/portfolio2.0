@@ -91,8 +91,11 @@ export const ListItem = styled.li`
 
 // Utils
 
+export const separator = css`
+  border-bottom: 1px solid rgba(211, 216, 232, 0.3);
+`;
+
 export const sectionBlock = css`
-  border-bottom: 1px solid #cecece;
   min-height: 100vh;
 
   &::before {
