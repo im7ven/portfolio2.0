@@ -1,19 +1,13 @@
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { BiSolidUserDetail } from "react-icons/bi";
+import { IoMdDownload } from "react-icons/io";
 import styled, { css } from "styled-components";
 import "../font.css";
 import avatar from "../images/avatar.webp";
-import {
-  bodyText,
-  grid1x2,
-  secondaryHeading,
-  sectionBlock,
-  subHeading,
-} from "../styles.global";
-import RevealAnimation from "./RevealAnimation";
-import { BiSolidUserDetail } from "react-icons/bi";
-import { IoMdDownload } from "react-icons/io";
-import { motion } from "framer-motion";
-import { useState } from "react";
+import { grid1x2, sectionBlock } from "../styles.global";
 import AboutMe from "./AboutMe";
+import RevealAnimation from "./RevealAnimation";
 
 const HeroWrapper = styled.section`
   ${sectionBlock}
