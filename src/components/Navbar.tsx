@@ -1,10 +1,7 @@
-import styled from "styled-components";
-import { ListItem } from "../styles.global";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { TbBrandGithubFilled } from "react-icons/tb";
-import { IoIosMail } from "react-icons/io";
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
+import styled from "styled-components";
+import { ListItem } from "../styles.global";
 import ProgressFadeIn from "./ProgressFadeIn";
 import SocialLinks from "./SocialLinks";
 const NavbarWrapper = styled(motion.nav)`
