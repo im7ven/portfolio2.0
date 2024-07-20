@@ -17,7 +17,7 @@ const fadeInAnimationVariants = {
     y: 0,
     transition: {
       duration: 0.3,
-      delay: 0.4 + index * 0.1,
+      delay: 0.4 + index * 0.15,
     },
   }),
 };
@@ -32,7 +32,7 @@ const fadeInAnimationVariantsLargeScreen = {
     x: 0,
     transition: {
       duration: 0.3,
-      delay: 0.4 + index * 0.1,
+      delay: 0.4 + index * 0.15,
     },
   }),
 };
