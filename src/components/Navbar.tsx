@@ -4,9 +4,10 @@ import styled from "styled-components";
 import { ListItem } from "../styles.global";
 import ProgressFadeIn from "./ProgressFadeIn";
 import SocialLinks from "./SocialLinks";
+
 const NavbarWrapper = styled(motion.nav)`
   display: none;
-  // justify-content: center;
+  justify-content: center;
   align-items: center;
   position: absolute;
   width: 100%;
@@ -22,13 +23,28 @@ const NavbarWrapper = styled(motion.nav)`
     margin: 0rem auto 0;
     justify-content: center;
   }
+
+  @media screen and (min-width: 1250px) {
+    padding: 2rem 3.5rem;
+    position: fixed;
+    width: 3rem;
+    min-height: 100vh;
+    left: 0;
+    align-items: start;
+  }
 `;
 
 const NavList = styled.ul`
   display: flex;
   justify-content: center;
-  // gap: 3rem;
+  gap: 2rem;
   list-style: none;
+
+  @media screen and (min-width: 1250px) {
+    gap: 8rem;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const PlaceHolder = styled.span`
@@ -38,13 +54,14 @@ const PlaceHolder = styled.span`
 const Navbar = () => {
   const navLinks: ReactNode[] = [
     <PlaceHolder>|</PlaceHolder>,
-    <ListItem>Projects</ListItem>,
-    <ListItem className="spacing">Skills</ListItem>,
-    <ListItem>Contact</ListItem>,
+    <ListItem className="rotate">Projects</ListItem>,
+    <ListItem className="spacing rotate">Skills</ListItem>,
+    <ListItem className="rotate">Contact</ListItem>,
   ];
 
   return (
     <NavbarWrapper>
+      <SocialLinks />
       <NavList>
         {navLinks.map((link, index) => (
           <ProgressFadeIn
@@ -56,7 +73,6 @@ const Navbar = () => {
           </ProgressFadeIn>
         ))}
       </NavList>
-      <SocialLinks />
     </NavbarWrapper>
   );
 };
