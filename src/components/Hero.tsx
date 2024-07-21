@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { BiSolidUserDetail } from "react-icons/bi";
-import { IoMdDownload } from "react-icons/io";
+
+import { MdOutlineFileDownload } from "react-icons/md";
+
 import styled, { css } from "styled-components";
 import "../font.css";
 import avatar from "../images/avatar.webp";
@@ -17,8 +19,6 @@ const HeroWrapper = styled.section`
   ${sectionBlock}
   ${grid1x2}
   padding: 0 2rem;
-  max-width: 125rem;
-  margin: 0 auto;
 `;
 
 const HeroDetails = styled.div`
@@ -96,6 +96,7 @@ const BtnWrapper = styled.div`
   align-items: center;
   gap: 1rem;
   justify-content: center;
+  margin-top: 2rem;
 
   @media screen and (min-width: 768px) {
     justify-content: start;
@@ -115,11 +116,14 @@ const AboutBtn = styled.button`
   border: 1px solid white;
   background: 0;
   padding: 0.8rem 1.5rem;
-  transition: all 0.15s ease-in;
+  transition: all 0.175s ease-in;
   cursor: pointer;
+  flex-grow: 1;
+  justify-content: center;
 
   &:hover {
-    transform: scale(0.97);
+    background-color: #fff;
+    color: var(--background-primary);
   }
 
   @media screen and (min-width: 768px) {
@@ -154,14 +158,14 @@ const Hero = () => {
               <RevealAnimation>
                 <Title>Frontend Developer</Title>
               </RevealAnimation>
-              <RevealAnimation>
+              <RevealAnimation width="100%">
                 <BtnWrapper>
                   <AboutBtn onClick={toggleShowAbout}>
                     <BiSolidUserDetail size="26px" />
                     View About
                   </AboutBtn>
                   <ResumeBtn>
-                    <IoMdDownload size="26px" />
+                    <MdOutlineFileDownload size="26px" />
                     Resume
                   </ResumeBtn>
                 </BtnWrapper>
