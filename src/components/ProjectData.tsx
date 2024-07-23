@@ -102,7 +102,7 @@ export const projectData: Project[] = [
     title: "Age Calculator",
     description:
       "This project is a Frontend Mentor challenge, showcasing an age calculator app. Utilizing user input, I developed a responsive interface that computes and presents ages in years, months, and days.",
-    overline: "Subscription service",
+    overline: "Calculator",
     tech: ["Html", "Css", "JavaScript"],
     image: ageCalc,
     repoPath: "https://github.com/im7ven/Age-Calculatorm",
