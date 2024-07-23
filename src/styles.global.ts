@@ -6,6 +6,8 @@ export const GlobalStyles = createGlobalStyle`
 --secondary-color: #16F8B6;
 --accent-color: #F926AE;
 --background-primary: #0D1224;
+--background-secondary: #11152C;
+--border-thin: 0 0 0 0.6px rgba(245, 243, 255, 0.2);
 --body-text: #b8c1ec;
 --border-radius: 5px;
 --primary-font:  "Gabarito", sans-serif;
@@ -50,8 +52,23 @@ export const subHeading = css`
   text-transform: uppercase;
   font-size: 1.9rem;
 
+  &.primary {
+    color: var(--primary-color);
+  }
+
   @media screen and (min-width) {
     font-size: 2.1rem;
+  }
+`;
+
+export const sectionHeading = css`
+  font-size: 4rem;
+  color: #fff;
+  position: relative;
+  margin-top: 4rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 5rem;
   }
 `;
 
@@ -61,7 +78,7 @@ export const bodyText = css`
   line-height: 30px;
 
   @media screen and (min-width: 768px) {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
   }
 `;
 
@@ -97,12 +114,42 @@ export const ListItem = styled.li`
 
 // Utils
 
+export const btn = css`
+  background: 0;
+  outline: 0;
+  padding: 1.2rem 2rem;
+  border-radius: var(--border-radius);
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  transition: all 0.175s ease-in;
+  cursor: pointer;
+  justify-content: center;
+
+  &.primaryBtn {
+    background-color: var(--primary-color);
+    border: 0;
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: var(--background-primary);
+  }
+`;
+
 export const separator = css`
   border-bottom: 1px solid rgba(211, 216, 232, 0.3);
 `;
 
 export const sectionBlock = css`
   min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -111,6 +158,10 @@ export const sectionBlock = css`
     left: 45%;
     right: 45%;
     box-shadow: #7a55ff 0px 0px 20rem 6rem;
+  }
+
+  @media screen and (min-width: 1250px) {
+    max-width: 110rem;
   }
 `;
 
