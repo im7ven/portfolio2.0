@@ -57,7 +57,7 @@ const SocialLinks = () => {
   return (
     <IconWrapper>
       {socialIcons.map((icon, index) => (
-        <ProgressFadeIn key={index} index={index}>
+        <ProgressFadeIn delay={1} key={index} index={index}>
           {icon}
         </ProgressFadeIn>
       ))}
