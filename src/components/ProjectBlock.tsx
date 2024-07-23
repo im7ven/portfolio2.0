@@ -1,20 +1,16 @@
-import styled from "styled-components";
-import {
-  secondaryHeading,
-  sectionBlock,
-  sectionHeading,
-} from "../styles.global";
-import { projectData } from "./ProjectData";
-import ProjectCard from "./ProjectCard";
-import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-
 import { useState } from "react";
-import ProgressFadeIn from "./ProgressFadeIn";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import styled from "styled-components";
+import { BlockHeading, sectionBlock } from "../styles.global";
 import AnimatedText from "./AnimatedText";
+import { SectionWrapper } from "./Hero";
+import ProjectCard from "./ProjectCard";
+import { projectData } from "./ProjectData";
 
 const BlockContainer = styled.section`
   ${sectionBlock}
   position: relative;
+  padding-bottom: 4rem;
 `;
 
 const ProjectGrid = styled.div`
@@ -54,11 +50,6 @@ const ToggleIcon = styled(MdKeyboardDoubleArrowDown)<{ isExpanded: boolean }>`
   transition: transform 0.2s ease-in;
 `;
 
-const BlockHeading = styled.h2`
-  ${sectionHeading}
-  text-align: center;
-`;
-
 const ProjectBlock = () => {
   const [isShowAllProjects, setIsShowAllProjects] = useState(false);
   const defaultProjects = projectData.filter((_, index) => index < 4);
@@ -70,20 +61,22 @@ const ProjectBlock = () => {
   };
 
   return (
-    <BlockContainer>
-      <BlockHeading>
-        <AnimatedText text="Project Showcase"></AnimatedText>
-      </BlockHeading>
-      <ProjectGrid>
-        {projects.map((project) => (
-          <ProjectCard {...project} />
-        ))}
-      </ProjectGrid>
-      <ProjectToggle onClick={toggleProjects}>
-        {isShowAllProjects ? "View Less" : "View More"}
-        <ToggleIcon isExpanded={isShowAllProjects} />
-      </ProjectToggle>
-    </BlockContainer>
+    <SectionWrapper>
+      <BlockContainer>
+        <BlockHeading>
+          <AnimatedText text="Project Showcase"></AnimatedText>
+        </BlockHeading>
+        <ProjectGrid>
+          {projects.map((project) => (
+            <ProjectCard {...project} />
+          ))}
+        </ProjectGrid>
+        <ProjectToggle onClick={toggleProjects}>
+          {isShowAllProjects ? "View Less" : "View More"}
+          <ToggleIcon isExpanded={isShowAllProjects} />
+        </ProjectToggle>
+      </BlockContainer>
+    </SectionWrapper>
   );
 };
 
