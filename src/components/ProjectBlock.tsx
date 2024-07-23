@@ -10,7 +10,7 @@ import { projectData } from "./ProjectData";
 const BlockContainer = styled.section`
   ${sectionBlock}
   position: relative;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
 `;
 
 const ProjectGrid = styled.div`
