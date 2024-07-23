@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
 --accent-color: #F926AE;
 --background-primary: #0D1224;
 --background-secondary: #11152C;
---border-color: 0 0 0 0.6px rgba(245, 243, 255, 0.2);
+--border-color:rgba(245, 243, 255, 0.1);
 --body-text: #b8c1ec;
 --border-radius: 5px;
 --primary-font:  "Gabarito", sans-serif;
@@ -61,11 +61,12 @@ export const subHeading = css`
   }
 `;
 
-export const sectionHeading = css`
+export const BlockHeading = styled.h2`
   font-size: 4rem;
   color: #fff;
   position: relative;
-  margin-top: 4rem;
+  margin-top: 6rem;
+  text-align: center;
 
   @media screen and (min-width: 768px) {
     font-size: 5rem;
