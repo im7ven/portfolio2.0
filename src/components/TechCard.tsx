@@ -8,9 +8,14 @@ const Card = styled.div`
   border-radius: 6px;
   display: inline-block;
   background-color: var(--background-secondary);
-  max-width: 12rem;
+  min-width: 13rem;
+  max-width: 13rem;
   flex-grow: 1;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    min-width: initial;
+  }
 `;
 
 const LightContainer = styled.div`
