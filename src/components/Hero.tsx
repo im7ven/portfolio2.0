@@ -11,7 +11,7 @@ import { grid1x2, sectionBlock, separator } from "../styles.global";
 import AboutMe from "./AboutMe";
 import RevealAnimation from "./RevealAnimation";
 
-const SectionWrapper = styled.div`
+export const SectionWrapper = styled.div`
   ${separator}
 `;
 
