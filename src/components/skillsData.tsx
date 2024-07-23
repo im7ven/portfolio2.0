@@ -20,28 +20,28 @@ export interface Skill {
 
 const skills: Skill[] = [
   {
-    icon: <SiReact size="40px" color="#fff" />,
+    icon: <SiReact size="40px" color="#16F8B6" />,
     label: "React",
   },
-  { icon: <SiNextdotjs size="40px" color="#fff" />, label: "Next Js" },
-  { icon: <SiTypescript size="40px" color="#fff" />, label: "TypeScript" },
-  { icon: <SiJavascript size="40px" color="#fff" />, label: "JavaScript" },
-  { icon: <SiGit size="40px" color="#fff" />, label: "Git" },
+  { icon: <SiNextdotjs size="40px" color="#16F8B6" />, label: "Next Js" },
+  { icon: <SiTypescript size="40px" color="#16F8B6" />, label: "TypeScript" },
+  { icon: <SiJavascript size="40px" color="#16F8B6" />, label: "JavaScript" },
+  { icon: <SiGit size="40px" color="#16F8B6" />, label: "Git" },
   {
-    icon: <SiStyledcomponents size="40px" color="#fff" />,
+    icon: <SiStyledcomponents size="40px" color="#16F8B6" />,
     label: "Styled-components",
   },
-  { icon: <SiChakraui size="40px" color="#fff" />, label: "Chakra UI" },
+  { icon: <SiChakraui size="40px" color="#16F8B6" />, label: "Chakra UI" },
   {
-    icon: <PiFramerLogoFill size="40px" color="#fff" />,
+    icon: <PiFramerLogoFill size="40px" color="#16F8B6" />,
     label: "Framer Motion",
   },
   {
-    icon: <SiTailwindcss size="40px" color="#fff" />,
+    icon: <SiTailwindcss size="40px" color="#16F8B6" />,
     label: "Tailwind Css",
   },
-  { icon: <SiHtml5 size="40px" color="#fff" />, label: "Html" },
-  { icon: <SiCss3 size="40px" color="#fff" />, label: "Css" },
+  { icon: <SiHtml5 size="40px" color="#16F8B6" />, label: "Html" },
+  { icon: <SiCss3 size="40px" color="#16F8B6" />, label: "Css" },
 ];
 
 export default skills;
