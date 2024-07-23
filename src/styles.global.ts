@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
 --accent-color: #F926AE;
 --background-primary: #0D1224;
 --background-secondary: #11152C;
---border-thin: 0 0 0 0.6px rgba(245, 243, 255, 0.2);
+--border-color: 0 0 0 0.6px rgba(245, 243, 255, 0.2);
 --body-text: #b8c1ec;
 --border-radius: 5px;
 --primary-font:  "Gabarito", sans-serif;
