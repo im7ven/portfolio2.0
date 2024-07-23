@@ -8,6 +8,7 @@ import communicationIcon from "../images/communication.png";
 import creativityIcon from "../images/creativity.png";
 import collaboration from "../images/collaboration.png";
 import FadeUp from "./FadeUp";
+import { SectionWrapper } from "./Hero";
 
 const SkillContainer = styled.section`
   ${sectionBlock}
@@ -34,47 +35,49 @@ const SoftSkillWrapper = styled.div`
 
 const SkillBlock = () => {
   return (
-    <SkillContainer>
-      <BlockHeading>
-        <AnimatedText text="Some of my skills"></AnimatedText>
-      </BlockHeading>
-      <FadeUp>
-        <SkillGrid>
-          {skills.map((skill) => (
-            <TechCard {...skill} />
-          ))}
-        </SkillGrid>
-      </FadeUp>
-      <SoftSkillWrapper>
+    <SectionWrapper>
+      <SkillContainer>
+        <BlockHeading>
+          <AnimatedText text="Some of my skills"></AnimatedText>
+        </BlockHeading>
         <FadeUp>
-          <SoftSkillFeature icon={communicationIcon} heading="Communication">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-            aspernatur aliquid illo voluptatum sed quo dolore consequuntur
-            cupiditate earum, nulla maxime a dolorem laboriosam assumenda
-            aperiam beatae alias mollitia rerum esse officia asperiores
-            doloremque? Nostrum minus rerum molestias quo eum!
-          </SoftSkillFeature>
+          <SkillGrid>
+            {skills.map((skill) => (
+              <TechCard {...skill} />
+            ))}
+          </SkillGrid>
         </FadeUp>
-        <FadeUp>
-          <SoftSkillFeature icon={creativityIcon} heading="Communication">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-            aspernatur aliquid illo voluptatum sed quo dolore consequuntur
-            cupiditate earum, nulla maxime a dolorem laboriosam assumenda
-            aperiam beatae alias mollitia rerum esse officia asperiores
-            doloremque? Nostrum minus rerum molestias quo eum!
-          </SoftSkillFeature>
-        </FadeUp>
-        <FadeUp>
-          <SoftSkillFeature icon={collaboration} heading="Communication">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-            aspernatur aliquid illo voluptatum sed quo dolore consequuntur
-            cupiditate earum, nulla maxime a dolorem laboriosam assumenda
-            aperiam beatae alias mollitia rerum esse officia asperiores
-            doloremque? Nostrum minus rerum molestias quo eum!
-          </SoftSkillFeature>
-        </FadeUp>
-      </SoftSkillWrapper>
-    </SkillContainer>
+        <SoftSkillWrapper>
+          <FadeUp>
+            <SoftSkillFeature icon={communicationIcon} heading="Communication">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              aspernatur aliquid illo voluptatum sed quo dolore consequuntur
+              cupiditate earum, nulla maxime a dolorem laboriosam assumenda
+              aperiam beatae alias mollitia rerum esse officia asperiores
+              doloremque? Nostrum minus rerum molestias quo eum!
+            </SoftSkillFeature>
+          </FadeUp>
+          <FadeUp>
+            <SoftSkillFeature icon={creativityIcon} heading="Communication">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              aspernatur aliquid illo voluptatum sed quo dolore consequuntur
+              cupiditate earum, nulla maxime a dolorem laboriosam assumenda
+              aperiam beatae alias mollitia rerum esse officia asperiores
+              doloremque? Nostrum minus rerum molestias quo eum!
+            </SoftSkillFeature>
+          </FadeUp>
+          <FadeUp>
+            <SoftSkillFeature icon={collaboration} heading="Communication">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              aspernatur aliquid illo voluptatum sed quo dolore consequuntur
+              cupiditate earum, nulla maxime a dolorem laboriosam assumenda
+              aperiam beatae alias mollitia rerum esse officia asperiores
+              doloremque? Nostrum minus rerum molestias quo eum!
+            </SoftSkillFeature>
+          </FadeUp>
+        </SoftSkillWrapper>
+      </SkillContainer>
+    </SectionWrapper>
   );
 };
 
