@@ -35,6 +35,12 @@ const Light = styled.div`
     rgb(76, 207, 175),
     rgba(0, 0, 0, 0)
   );
+  /* background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgb(130, 68, 255),
+    rgba(0, 0, 0, 0)
+  ); */
   height: 2px;
 `;
 
@@ -47,6 +53,16 @@ const ContentWrapper = styled.div`
   text-align: center;
   gap: 0.5rem;
   position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 45%;
+    right: 45%;
+    box-shadow: var(--secondary-color) 0px 0px 3.5rem 1rem;
+  }
 `;
 
 const Label = styled.p`
