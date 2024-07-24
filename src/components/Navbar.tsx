@@ -60,13 +60,13 @@ const Navbar = () => {
   const navLinks: ReactNode[] = [
     <PlaceHolder>|</PlaceHolder>,
     <Link href="#project">
-      <ListItem className="rotate">Projects</ListItem>,
+      <ListItem className="rotate">Projects</ListItem>
     </Link>,
     <Link href="#skills">
       <ListItem className="spacing rotate">Skills</ListItem>
     </Link>,
     <Link href="#contact">
-      <ListItem className="rotate">Contact</ListItem>,
+      <ListItem className="rotate">Contact</ListItem>
     </Link>,
   ];
 
