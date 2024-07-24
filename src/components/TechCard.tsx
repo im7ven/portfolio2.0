@@ -12,10 +12,6 @@ const Card = styled.div`
   max-width: 13rem;
   flex-grow: 1;
   position: relative;
-
-  @media screen and (min-width: 768px) {
-    min-width: initial;
-  }
 `;
 
 const LightContainer = styled.div`
@@ -35,12 +31,7 @@ const Light = styled.div`
     rgb(76, 207, 175),
     rgba(0, 0, 0, 0)
   );
-  /* background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgb(130, 68, 255),
-    rgba(0, 0, 0, 0)
-  ); */
+
   height: 2px;
 `;
 
