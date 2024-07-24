@@ -134,6 +134,12 @@ const AboutBtn = styled.button`
 const ResumeBtn = styled(AboutBtn)`
   background: var(--primary-color);
   border: 0;
+  width: 100%;
+`;
+
+const ResumeLink = styled.a`
+  text-decoration: none;
+  flex-grow: 1;
 `;
 
 const Hero = () => {
@@ -164,10 +170,15 @@ const Hero = () => {
                     <BiSolidUserDetail size="26px" />
                     View About
                   </AboutBtn>
-                  <ResumeBtn>
-                    <MdOutlineFileDownload size="26px" />
-                    Resume
-                  </ResumeBtn>
+                  <ResumeLink
+                    href="public/JA_Resume24.pdf"
+                    download="JA_Resume24.pdf"
+                  >
+                    <ResumeBtn>
+                      <MdOutlineFileDownload size="26px" />
+                      Resume
+                    </ResumeBtn>
+                  </ResumeLink>
                 </BtnWrapper>
               </RevealAnimation>
             </HeroDetails>
