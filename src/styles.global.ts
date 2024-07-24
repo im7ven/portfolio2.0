@@ -30,6 +30,11 @@ html {
     background-color: var(--background-primary);
  }
 
+ ::selection {
+    color:#fff;
+    background: #8244FF;
+}
+
 `;
 
 // Typography
