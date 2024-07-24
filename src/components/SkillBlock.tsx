@@ -54,29 +54,29 @@ const SkillBlock = () => {
         <SoftSkillWrapper>
           <FadeUp>
             <SoftSkillFeature icon={communicationIcon} heading="Communication">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-              aspernatur aliquid illo voluptatum sed quo dolore consequuntur
-              cupiditate earum, nulla maxime a dolorem laboriosam assumenda
-              aperiam beatae alias mollitia rerum esse officia asperiores
-              doloremque? Nostrum minus rerum molestias quo eum!
+              I firmly believe that effective communication is a vital aspect of
+              success. Throughout my experiences, I have consistently
+              demonstrated strong communication skills. I believe in actively
+              listening to others, valuing diverse perspectives, and I am eager
+              to transition my communication skills to a development team.
             </SoftSkillFeature>
           </FadeUp>
           <FadeUp>
-            <SoftSkillFeature icon={creativityIcon} heading="Communication">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-              aspernatur aliquid illo voluptatum sed quo dolore consequuntur
-              cupiditate earum, nulla maxime a dolorem laboriosam assumenda
-              aperiam beatae alias mollitia rerum esse officia asperiores
-              doloremque? Nostrum minus rerum molestias quo eum!
+            <SoftSkillFeature icon={creativityIcon} heading="Creativity">
+              I find joy in exploring innovative approaches to frontend
+              development. I am able to bring unique perspective to my
+              development by blending technical and artistic mindsets. I often
+              gather the materials I have learned, and combine them to achieve
+              impactful results.
             </SoftSkillFeature>
           </FadeUp>
           <FadeUp>
-            <SoftSkillFeature icon={collaboration} heading="Communication">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-              aspernatur aliquid illo voluptatum sed quo dolore consequuntur
-              cupiditate earum, nulla maxime a dolorem laboriosam assumenda
-              aperiam beatae alias mollitia rerum esse officia asperiores
-              doloremque? Nostrum minus rerum molestias quo eum!
+            <SoftSkillFeature icon={collaboration} heading="Collaboration">
+              I thrive in collaborative environments where teamwork fuels
+              success. I enjoy sharing ideas, learning from others, and tackling
+              challenges as a team. I value clear communication and enjoy
+              sharing knowledge, being part of a team means learning from each
+              other and achieving great results together.
             </SoftSkillFeature>
           </FadeUp>
         </SoftSkillWrapper>
