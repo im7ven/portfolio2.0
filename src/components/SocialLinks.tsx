@@ -12,10 +12,13 @@ const IconWrapper = styled.div`
   position: absolute;
   z-index: 100;
   top: 15px;
-  right: 1.5rem;
+  transform: translatex(-50%);
+  left: 50%;
 
   @media screen and (min-width: 768px) {
     right: 3.5rem;
+    left: initial;
+    transform: initial;
   }
 
   @media screen and (min-width: 1250px) {
