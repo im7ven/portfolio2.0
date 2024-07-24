@@ -171,7 +171,7 @@ const Hero = () => {
                     View About
                   </AboutBtn>
                   <ResumeLink
-                    href="public/JA_Resume24.pdf"
+                    href="/JA_Resume24.pdf"
                     download="JA_Resume24.pdf"
                   >
                     <ResumeBtn>
