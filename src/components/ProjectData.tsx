@@ -1,13 +1,11 @@
-import { ReactNode } from "react";
-import audiophile from "../images/audiophile1.webp";
 import ageCalc from "../images/agecalculator.webp";
+import audiophile from "../images/audiophile1.webp";
 import coffeeRoasters from "../images/coffeeroasters.webp";
 import gameHub from "../images/gamehub.webp";
 import kbBoard from "../images/kbboard.webp";
-import moshify from "../images/moshify.webp";
+import pep from "../images/pep.webp";
 import shippudenHub from "../images/shippudenhub.webp";
 import xpenseTracker from "../images/xpensetracker.webp";
-import pep from "../images/pep.webp";
 
 export type Project = {
   title: string;

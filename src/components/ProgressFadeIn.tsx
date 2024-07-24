@@ -1,4 +1,4 @@
-import { delay, easeIn, easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { ReactNode, useEffect, useState } from "react";
 
 interface Props {

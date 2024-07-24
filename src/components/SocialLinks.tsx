@@ -1,9 +1,9 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import { TbBrandGithubFilled } from "react-icons/tb";
-import ProgressFadeIn from "./ProgressFadeIn";
 import styled, { css } from "styled-components";
+import ProgressFadeIn from "./ProgressFadeIn";
 
 const IconWrapper = styled.div`
   display: flex;
