@@ -42,6 +42,10 @@ const icon = css`
   }
 `;
 
+const IconLink = styled.a`
+  text-decoration: none;
+`;
+
 const LinkedIn = styled(FaLinkedinIn)`
   ${icon}
 `;
@@ -53,12 +57,25 @@ const Email = styled(IoIosMail)`
 `;
 
 const SocialLinks = () => {
-  const socialIcons: ReactNode[] = [<LinkedIn />, <GitHub />, <Email />];
+  const socialIcons: ReactNode[] = [
+    <IconLink
+      target="_blank"
+      href="https://www.linkedin.com/in/justin-alexander-27542522b"
+    >
+      <LinkedIn />
+    </IconLink>,
+    <IconLink target="_blank" href="https://github.com/im7ven">
+      <GitHub />,
+    </IconLink>,
+    <IconLink href="mailto:alexanderrr416@gmail.com">
+      <Email />,
+    </IconLink>,
+  ];
   return (
     <IconWrapper>
       {socialIcons.map((icon, index) => (
         <ProgressFadeIn delay={1} key={index} index={index}>
-          {icon}
+          <IconLink>{icon}</IconLink>
         </ProgressFadeIn>
       ))}
     </IconWrapper>
