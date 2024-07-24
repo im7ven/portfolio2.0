@@ -95,7 +95,7 @@ export const projectData: Project[] = [
     overline: "Subscription service",
     tech: ["React", "TypeScript", "Styled-components", "Figma"],
     image: coffeeRoasters,
-    repoPath: "https://github.com/im7ven/preceptor-education-program",
+    repoPath: "https://coffeeroasters-black.vercel.app/",
     sitePath: "https://preceptor.ca/",
   },
   {
