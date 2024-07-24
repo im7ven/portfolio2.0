@@ -1,5 +1,17 @@
 import { easeIn, motion } from "framer-motion";
 import { ReactNode } from "react";
+import styled from "styled-components";
+
+const FadeUpWrapper = styled.div`
+  overflow: hidden;
+  position: relative;
+  padding: 0 0.5rem;
+
+  &.span {
+    width: 100%;
+    margin: 0 auto;
+  }
+`;
 
 interface Props {
   children: ReactNode;
@@ -18,9 +30,7 @@ const FadeUp = ({ children }: Props) => {
   };
 
   return (
-    <div
-      style={{ overflow: "hidden", position: "relative", padding: "0 .5rem" }}
-    >
+    <FadeUpWrapper>
       <motion.div
         variants={defaultAnimations}
         initial="hidden"
@@ -31,7 +41,7 @@ const FadeUp = ({ children }: Props) => {
       >
         {children}
       </motion.div>
-    </div>
+    </FadeUpWrapper>
   );
 };
 
