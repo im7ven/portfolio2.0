@@ -58,18 +58,12 @@ const Email = styled(IoIosMail)`
 
 const SocialLinks = () => {
   const socialIcons: ReactNode[] = [
-    <IconLink
+    <LinkedIn
       target="_blank"
       href="https://www.linkedin.com/in/justin-alexander-27542522b"
-    >
-      <LinkedIn />
-    </IconLink>,
-    <IconLink target="_blank" href="https://github.com/im7ven">
-      <GitHub />
-    </IconLink>,
-    <IconLink href="mailto:alexanderrr416@gmail.com">
-      <Email />
-    </IconLink>,
+    />,
+    <GitHub target="_blank" href="https://github.com/im7ven" />,
+    <Email href="mailto:alexanderrr416@gmail.com" />,
   ];
   return (
     <IconWrapper>
