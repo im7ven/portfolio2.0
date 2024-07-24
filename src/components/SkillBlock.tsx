@@ -36,7 +36,7 @@ const SoftSkillWrapper = styled.div`
 const SkillBlock = () => {
   return (
     <SectionWrapper>
-      <SkillContainer>
+      <SkillContainer id="skills">
         <BlockHeading>
           <AnimatedText text="Some of my skills"></AnimatedText>
         </BlockHeading>

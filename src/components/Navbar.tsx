@@ -52,12 +52,22 @@ const PlaceHolder = styled.span`
   opacity: 0.1;
 `;
 
+const Link = styled.a`
+  text-decoration: none;
+`;
+
 const Navbar = () => {
   const navLinks: ReactNode[] = [
     <PlaceHolder>|</PlaceHolder>,
-    <ListItem className="rotate">Projects</ListItem>,
-    <ListItem className="spacing rotate">Skills</ListItem>,
-    <ListItem className="rotate">Contact</ListItem>,
+    <Link href="#project">
+      <ListItem className="rotate">Projects</ListItem>,
+    </Link>,
+    <Link href="#skills">
+      <ListItem className="spacing rotate">Skills</ListItem>
+    </Link>,
+    <Link href="#contact">
+      <ListItem className="rotate">Contact</ListItem>,
+    </Link>,
   ];
 
   return (

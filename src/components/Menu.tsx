@@ -58,6 +58,10 @@ const MenuList = styled(motion.ul)`
   }
 `;
 
+const Link = styled.a`
+  text-decoration: none;
+`;
+
 const Menu = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -79,9 +83,15 @@ const Menu = () => {
             exit={{ maxHeight: 0 }}
             transition={{ duration: 0.25, ease: easeIn }}
           >
-            <ListItem className="mobile">Projects</ListItem>
-            <ListItem className="mobile">Skills</ListItem>
-            <ListItem className="mobile">Contacts</ListItem>
+            <Link href="#project">
+              <ListItem className="mobile">Projects</ListItem>
+            </Link>
+            <Link href="#skills">
+              <ListItem className="mobile">Skills</ListItem>
+            </Link>
+            <Link href="#contact">
+              <ListItem className="mobile">Contacts</ListItem>
+            </Link>
           </MenuList>
         )}
       </AnimatePresence>

@@ -65,10 +65,10 @@ const SocialLinks = () => {
       <LinkedIn />
     </IconLink>,
     <IconLink target="_blank" href="https://github.com/im7ven">
-      <GitHub />,
+      <GitHub />
     </IconLink>,
     <IconLink href="mailto:alexanderrr416@gmail.com">
-      <Email />,
+      <Email />
     </IconLink>,
   ];
   return (

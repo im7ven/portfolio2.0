@@ -62,7 +62,7 @@ const ProjectBlock = () => {
 
   return (
     <SectionWrapper>
-      <BlockContainer>
+      <BlockContainer id="project">
         <BlockHeading>
           <AnimatedText text="Project Showcase"></AnimatedText>
         </BlockHeading>

@@ -3,6 +3,7 @@ import { BlockHeading, bodyText, sectionBlock } from "../styles.global";
 import AnimatedText from "./AnimatedText";
 import ContactForm from "./ContactForm";
 import FadeUp from "./FadeUp";
+import { SectionWrapper } from "./Hero";
 
 const ContactContainer = styled.section`
   ${sectionBlock}
@@ -39,29 +40,31 @@ const ContactMessage = styled.p`
 
 const ContactBlock = () => {
   return (
-    <ContactContainer>
-      <BlockHeading>
-        <AnimatedText text="Lets Connect" />
-      </BlockHeading>
-      <ContactGrid>
-        <ContactDetails>
-          <ContactHeading>
-            <AnimatedText text="Get In Touch"></AnimatedText>
-          </ContactHeading>
-          <FadeUp>
-            <ContactMessage>
-              Let's collaborate and create something amazing together! I'm
-              passionate about working with others, whether it's taking on
-              exciting new projects, brainstorming innovative ideas, or simply
-              having a chat about all things code. Feel free to reach out, and
-              let's bring our ideas to life! Fill out the form or send me an
-              email.
-            </ContactMessage>
-          </FadeUp>
-        </ContactDetails>
-        <ContactForm />
-      </ContactGrid>
-    </ContactContainer>
+    <SectionWrapper>
+      <ContactContainer id="contact">
+        <BlockHeading>
+          <AnimatedText text="Lets Connect" />
+        </BlockHeading>
+        <ContactGrid>
+          <ContactDetails>
+            <ContactHeading>
+              <AnimatedText text="Get In Touch"></AnimatedText>
+            </ContactHeading>
+            <FadeUp>
+              <ContactMessage>
+                Let's collaborate and create something amazing together! I'm
+                passionate about working with others, whether it's taking on
+                exciting new projects, brainstorming innovative ideas, or simply
+                having a chat about all things code. Feel free to reach out, and
+                let's bring our ideas to life! Fill out the form or send me an
+                email.
+              </ContactMessage>
+            </FadeUp>
+          </ContactDetails>
+          <ContactForm />
+        </ContactGrid>
+      </ContactContainer>
+    </SectionWrapper>
   );
 };
 
