@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const FooterContainer = styled.footer`
-  padding: 3rem 0;
+  padding: 3rem 2.4rem;
   display: flex;
   justify-content: center;
   background-color: #0b0f1e;
+  text-align: center;
 `;
 
 const FooterContent = styled.div`
