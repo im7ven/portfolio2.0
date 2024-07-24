@@ -13,6 +13,10 @@ import { SectionWrapper } from "./Hero";
 const SkillContainer = styled.section`
   ${sectionBlock}
   padding-bottom: 6rem;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 12rem;
+  }
 `;
 
 const SkillGrid = styled.div`
