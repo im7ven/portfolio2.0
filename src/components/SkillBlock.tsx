@@ -21,7 +21,7 @@ const SkillGrid = styled.div`
   justify-content: center;
   gap: 2rem 1rem;
   margin: 6rem auto 0;
-  max-width: 80rem;
+  max-width: 85rem;
   padding: 0 2.4rem;
 `;
 
