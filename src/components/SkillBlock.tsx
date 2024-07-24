@@ -42,8 +42,8 @@ const SkillBlock = () => {
         </BlockHeading>
         <FadeUp>
           <SkillGrid>
-            {skills.map((skill) => (
-              <TechCard {...skill} />
+            {skills.map((skill, index) => (
+              <TechCard key={index} {...skill} />
             ))}
           </SkillGrid>
         </FadeUp>

@@ -93,7 +93,7 @@ const ProjectCard = ({ ...project }: Project) => {
           <CardHeading>{project.title}</CardHeading>
           <BadgeWrapper>
             {project.tech.map((item) => (
-              <Badge label={item} />
+              <Badge key={item} label={item} />
             ))}
           </BadgeWrapper>
           <CardDescription>{project.description}</CardDescription>

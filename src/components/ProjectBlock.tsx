@@ -67,8 +67,8 @@ const ProjectBlock = () => {
           <AnimatedText text="Project Showcase"></AnimatedText>
         </BlockHeading>
         <ProjectGrid>
-          {projects.map((project) => (
-            <ProjectCard {...project} />
+          {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
           ))}
         </ProjectGrid>
         <ProjectToggle onClick={toggleProjects}>
