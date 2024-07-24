@@ -10,6 +10,7 @@ import {
   SiStyledcomponents,
   SiChakraui,
   SiTailwindcss,
+  SiReactquery,
 } from "react-icons/si";
 import { PiFramerLogoFill } from "react-icons/pi";
 
@@ -25,12 +26,16 @@ const skills: Skill[] = [
   },
   { icon: <SiNextdotjs size="40px" color="#16F8B6" />, label: "Next Js" },
   { icon: <SiTypescript size="40px" color="#16F8B6" />, label: "TypeScript" },
-  { icon: <SiJavascript size="40px" color="#16F8B6" />, label: "JavaScript" },
   { icon: <SiGit size="40px" color="#16F8B6" />, label: "Git" },
   {
     icon: <SiStyledcomponents size="40px" color="#16F8B6" />,
     label: "Styled-components",
   },
+  {
+    icon: <SiReactquery size="40px" color="#16F8B6" />,
+    label: "React Query",
+  },
+  { icon: <SiJavascript size="40px" color="#16F8B6" />, label: "JavaScript" },
   { icon: <SiChakraui size="40px" color="#16F8B6" />, label: "Chakra UI" },
   {
     icon: <PiFramerLogoFill size="40px" color="#16F8B6" />,
