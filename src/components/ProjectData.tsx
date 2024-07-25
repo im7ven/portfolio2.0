@@ -37,7 +37,7 @@ export const projectData: Project[] = [
     sitePath: "https://kb-board-eight.vercel.app/",
   },
   {
-    title: "AudioPhlie e-Commerce",
+    title: "AudioPhile e-Commerce",
     description:
       "Completed this'Guru'ranked challenge project from Frontend Mentor. It showcases a tech e-commerce platform. Managing a pixel perfect design, while leveraging local storage and the context API to create a seamless cart management system.",
     overline: "E-commerce",
