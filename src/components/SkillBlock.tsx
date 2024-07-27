@@ -42,7 +42,7 @@ const SkillBlock = () => {
     <SectionWrapper>
       <SkillContainer id="skills">
         <BlockHeading>
-          <AnimatedText text="Some of my skills"></AnimatedText>
+          <AnimatedText text="My Skills"></AnimatedText>
         </BlockHeading>
         <FadeUp>
           <SkillGrid>
