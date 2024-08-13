@@ -6,6 +6,7 @@ import kbBoard from "../images/kbboard.webp";
 import pep from "../images/pep.webp";
 import shippudenHub from "../images/shippudenhub.webp";
 import xpenseTracker from "../images/xpensetracker.webp";
+import designo from "../images/designo.png";
 
 export type Project = {
   title: string;
@@ -75,6 +76,16 @@ export const projectData: Project[] = [
     image: shippudenHub,
     repoPath: "https://github.com/im7ven/shippudenHub",
     sitePath: "https://shippuden-hub.vercel.app/",
+  },
+  {
+    title: "Designo",
+    description:
+      "A responsive multipage web application where I leveraged SSR in Next Js to enhance performance.",
+    overline: "Multipage",
+    tech: ["Next Js", "TypeScript", "Tailwind Css", "Google Maps API", "Figma"],
+    image: designo,
+    repoPath: "https://github.com/im7ven/designo",
+    sitePath: "https://designo-five-amber.vercel.app/",
   },
   {
     title: "Xpense Tracker",
