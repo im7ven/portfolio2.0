@@ -80,7 +80,7 @@ export const projectData: Project[] = [
   {
     title: "Designo",
     description:
-      "A responsive multipage web application where I leveraged SSR in Next Js to enhance performance.",
+      "Another 'Guru' ranked challenge completed from Frontend Mentor. A responsive multipage web application where I leveraged SSR in Next Js to enhance performance.",
     overline: "Multipage",
     tech: ["Next Js", "TypeScript", "Tailwind Css", "Google Maps API", "Figma"],
     image: designo,
