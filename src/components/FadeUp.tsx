@@ -30,18 +30,18 @@ const FadeUp = ({ children }: Props) => {
   };
 
   return (
-    <FadeUpWrapper>
-      <motion.div
-        variants={defaultAnimations}
-        initial="hidden"
-        animate="hidden"
-        viewport={{ once: true }}
-        transition={{ duration: 0.4, ease: easeIn }}
-        whileInView="visible"
-      >
-        {children}
-      </motion.div>
-    </FadeUpWrapper>
+    // <FadeUpWrapper>
+    <motion.div
+      variants={defaultAnimations}
+      initial="hidden"
+      animate="hidden"
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, ease: easeIn }}
+      whileInView="visible"
+    >
+      {children}
+    </motion.div>
+    // </FadeUpWrapper>
   );
 };
 
