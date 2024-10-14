@@ -32,27 +32,24 @@ const HeroDetails = styled.div`
 `;
 
 const AuthorHeading = css`
-  line-height: 4.5rem;
   font-family: myFont, sans-sherif;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: normal;
   transition: 0.3s ease-in-out;
 
   @media screen and (min-width: 768px) {
-    font-size: 7rem;
-    line-height: 6rem;
-    max-width: 45rem;
+    font-size: 5rem;
+    line-height: 5rem;
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 9rem;
-    line-height: 7.5rem;
+    font-size: 5.5rem;
   }
 `;
 
 const H1 = styled.h1`
   ${AuthorHeading}
-  color: #fff;
+  color:#fff;
 `;
 
 const Title = styled.h2`
@@ -80,7 +77,7 @@ const Avatar = styled.img`
 
   @media screen and (min-width: 768px) {
     grid-column: 2;
-    max-width: 60rem;
+    max-width: 50rem;
   }
 `;
 
@@ -142,6 +139,17 @@ const ResumeLink = styled.a`
   flex-grow: 1;
 `;
 
+const HeroSummary = styled.p`
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 2rem;
+`;
+
+const TechHighlight = styled.span`
+  color: var(--accent-color);
+  font-weight: 700;
+`;
+
 const Hero = () => {
   const [showAbout, setShowAbout] = useState(false);
 
@@ -164,6 +172,12 @@ const Hero = () => {
               <RevealAnimation>
                 <Title>Frontend Developer</Title>
               </RevealAnimation>
+              <HeroSummary>
+                I specialize in creating web applications with{" "}
+                <TechHighlight>TypeScript</TechHighlight>,{" "}
+                <TechHighlight>React</TechHighlight>, and{" "}
+                <TechHighlight>Next.Js</TechHighlight>.
+              </HeroSummary>
               <RevealAnimation width="100%">
                 <BtnWrapper>
                   <AboutBtn onClick={toggleShowAbout}>
