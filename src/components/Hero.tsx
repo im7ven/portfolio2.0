@@ -172,12 +172,14 @@ const Hero = () => {
               <RevealAnimation>
                 <Title>Frontend Developer</Title>
               </RevealAnimation>
-              <HeroSummary>
-                I specialize in creating web applications with{" "}
-                <TechHighlight>TypeScript</TechHighlight>,{" "}
-                <TechHighlight>React</TechHighlight>, and{" "}
-                <TechHighlight>Next.Js</TechHighlight>.
-              </HeroSummary>
+              <RevealAnimation>
+                <HeroSummary>
+                  I specialize in creating web applications with{" "}
+                  <TechHighlight>TypeScript</TechHighlight>,{" "}
+                  <TechHighlight>React</TechHighlight>, and{" "}
+                  <TechHighlight>Next.Js</TechHighlight>.
+                </HeroSummary>
+              </RevealAnimation>
               <RevealAnimation width="100%">
                 <BtnWrapper>
                   <AboutBtn onClick={toggleShowAbout}>
