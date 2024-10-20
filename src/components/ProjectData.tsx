@@ -22,7 +22,7 @@ export const projectData: Project[] = [
   {
     title: "Kanban Board",
     description:
-      "Featuring a user-friendly design, this full-stack kanban board utilizes an array of powerful technologies such as Prisma, Next Auth, React Query, Zod, Zustand, React hook form, and zod.",
+      "Featuring a user-friendly design, this full-stack kanban board utilizes an array of powerful technologies such as Prisma, Next Auth, React Query, Zod, Zustand, and React hook form.",
     overline: "Task Management",
     tech: [
       "Next Js",
@@ -40,7 +40,7 @@ export const projectData: Project[] = [
   {
     title: "AudioPhile e-Commerce",
     description:
-      "Completed this'Guru'ranked challenge project from Frontend Mentor. It showcases a tech e-commerce platform. Managing a pixel perfect design, while leveraging local storage and the context API to create a seamless cart management system.",
+      "Completed this 'Guru' ranked challenge from Frontend Mentor. It showcases an e-commerce platform. Managing a pixel perfect design, while leveraging local storage and the context API to create a seamless cart management system.",
     overline: "E-commerce",
     tech: ["React", "TypeScript", "Styled-Components", "Figma"],
     image: audiophile,
