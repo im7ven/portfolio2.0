@@ -7,6 +7,7 @@ import pep from "../images/pep.webp";
 import shippudenHub from "../images/shippudenhub.webp";
 import xpenseTracker from "../images/xpensetracker.webp";
 import designo from "../images/designo.png";
+import watchers from "../images/watchersCover.png";
 
 export type Project = {
   title: string;
@@ -38,6 +39,24 @@ export const projectData: Project[] = [
     sitePath: "https://kb-board-eight.vercel.app/",
   },
   {
+    title: "Watchers",
+    description:
+      "A mobile-friendly movie app that allows users to explore, review, and save their favorite films and series, featuring detailed information on ratings casts, and more.",
+    overline: "Movie Discovery",
+    tech: [
+      "Next Js",
+      "TypeScript",
+      "React Query",
+      "MongoDb",
+      "Next Auth",
+      "RadixUI",
+      "Zod",
+    ],
+    image: watchers,
+    repoPath: "https://github.com/im7ven/watchers",
+    sitePath: "https://watchers-app.vercel.app/",
+  },
+  {
     title: "AudioPhile e-Commerce",
     description:
       "Completed this 'Guru' ranked challenge from Frontend Mentor. It showcases an e-commerce platform. Managing a pixel perfect design, while leveraging local storage and the context API to create a seamless cart management system.",
@@ -46,16 +65,6 @@ export const projectData: Project[] = [
     image: audiophile,
     repoPath: "https://github.com/im7ven/Audiophile-e-commerce",
     sitePath: "https://audiophile-e-commerce-rho.vercel.app/",
-  },
-  {
-    title: "GameHub",
-    description:
-      "This project is a video game integration app using the RAWG API, allowing users to explore thousands of games and their details. It features dynamic game searches, detailed information pages, and a user-friendly interface.",
-    overline: "Game Discovery",
-    tech: ["React", "TypeScript", "Chakra UI", "Zustand", "React Query"],
-    image: gameHub,
-    repoPath: "https://github.com/im7ven/Game-Hub",
-    sitePath: "https://game-hub-im7ven.vercel.app/",
   },
   {
     title: "Preceptor Education Program",
@@ -67,6 +76,17 @@ export const projectData: Project[] = [
     repoPath: "https://github.com/im7ven/preceptor-education-program",
     sitePath: "https://preceptor.ca/",
   },
+  {
+    title: "GameHub",
+    description:
+      "This project is a video game integration app using the RAWG API, allowing users to explore thousands of games and their details. It features dynamic game searches, detailed information pages, and a user-friendly interface.",
+    overline: "Game Discovery",
+    tech: ["React", "TypeScript", "Chakra UI", "Zustand", "React Query"],
+    image: gameHub,
+    repoPath: "https://github.com/im7ven/Game-Hub",
+    sitePath: "https://game-hub-im7ven.vercel.app/",
+  },
+
   {
     title: "Shippuden Hub",
     description:
