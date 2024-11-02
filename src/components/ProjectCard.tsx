@@ -20,10 +20,6 @@ const Card = styled.article`
   border-style: solid;
   max-width: 50rem;
   transition: all 0.3s;
-
-  &:hover {
-    border-color: rgba(245, 243, 255, 0.3);
-  }
 `;
 
 const CardImage = styled.img`
