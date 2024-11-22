@@ -187,8 +187,8 @@ const Hero = () => {
                     View About
                   </AboutBtn>
                   <ResumeLink
-                    href="/JA_Resume24.pdf"
-                    download="JA_Resume24.pdf"
+                    href="/Resume_2025.pdf"
+                    download="Resume_2025.pdf"
                   >
                     <ResumeBtn>
                       <MdOutlineFileDownload size="26px" />
