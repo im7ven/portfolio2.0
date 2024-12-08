@@ -124,8 +124,8 @@ export const projectData: Project[] = [
     overline: "Subscription service",
     tech: ["React", "TypeScript", "Styled-components", "Figma"],
     image: coffeeRoasters,
-    repoPath: "https://coffeeroasters-black.vercel.app/",
-    sitePath: "https://preceptor.ca/",
+    repoPath: "https://github.com/im7ven/coffeeroasters-subscription",
+    sitePath: "https://coffeeroasters-black.vercel.app/",
   },
   {
     title: "Age Calculator",
